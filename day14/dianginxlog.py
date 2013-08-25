@@ -84,4 +84,6 @@ class NginxLogCollector(diamond.collector.Collector):
             mn = "diamond_http.code_%s" % k
             self.publish(mn ,v)
 
-
+#Location:/usr/share/diamond/collectors/dianginxlog/
+#run command:diamond -f -l -r ./ -c /etc/diamond/diamond.conf
+#modify diamond config:echo enabled=True >> /etc/diamond/collectors/NginxLogCollector.conf
